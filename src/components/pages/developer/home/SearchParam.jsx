@@ -14,7 +14,7 @@ const SearchParam = ({ handleSearch }) => {
 			<input
 				className='w-full p-2 px-2 pl-10  border  bg-content/10 border-content/20 rounded-md placeholder:text-search placeholder:opacity-90 focus:outline-accent'
 				type='text'
-				placeholder='Search by name or email'
+				placeholder='Search alumni'
 				value={searchTerm}
 				onChange={handleChange}
 			/>

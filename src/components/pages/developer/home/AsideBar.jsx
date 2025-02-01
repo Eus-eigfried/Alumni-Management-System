@@ -11,13 +11,13 @@ const AsideBar = ({ activeLink }) => {
 					<div className='flex flex-col gap-5'>
 						<div className='flex flex-row justify-start gap-2'>
 							<img
-								src='public/vite.svg'
+								src='public/COE_logo.jpg'
 								alt='logo'
 								className='object-cover rounded-full'
 							/>
-							<p>Hello, {userAdmin}</p>
 						</div>
 						<ul className='nav flex gap-2 flex-col justify-star w-full'>
+							<p>Hello, {userAdmin}</p>
 							<li
 								className={`nav-link navigator-${
 									activeLink === "home" ? "active" : ""

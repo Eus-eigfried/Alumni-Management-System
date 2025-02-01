@@ -86,7 +86,8 @@ const MainHome = () => {
 			const filtered = users.filter(
 				(user) =>
 					user[1].toLowerCase().includes(lowercasedSearchTerm) || // search by name
-					user[2].toLowerCase().includes(lowercasedSearchTerm) // search by email
+					user[2].toLowerCase().includes(lowercasedSearchTerm) || // search by year graduated
+					user[3].toLowerCase().includes(lowercasedSearchTerm) //search by course
 			);
 			setFilteredUsers(filtered);
 		}
@@ -447,7 +448,7 @@ const MainHome = () => {
 					contactNo={contactNo}
 					currentStatus={currentStatus}
 					email={email}
-					// email
+					
 					setName={setName}
 					setYearGraduated={setYearGraduated}
 					setCourse={setCourse}

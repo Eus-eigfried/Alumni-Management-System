@@ -6,7 +6,6 @@ import ModalWrapper from "./ModalWrapper";
 
 const ModalAddUser = ({
 	handleSubmit,
-	email,
 	name,
 	yearGraduated,
 	course,
@@ -14,6 +13,7 @@ const ModalAddUser = ({
 	address,
 	contactNo,
 	currentStatus,
+	email,
 	// edit: setters
 	setName,
 	setYearGraduated,
@@ -57,7 +57,7 @@ const ModalAddUser = ({
 								<input
 									type='month'
 									id='start'
-									name='start'
+									name='Year Graduated'
 									min='1900-01'
 									max='2100-01'
 									value={yearGraduated}
@@ -85,7 +85,7 @@ const ModalAddUser = ({
 								<input
 									type='date'
 									id='start'
-									name='start'
+									name='Birthdate'
 									min='1900-01-01'
 									max='2100-01-01'
 									value={birthDate}

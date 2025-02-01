@@ -61,7 +61,7 @@ const ModalEditUser = ({
 									<input
 										type='month'
 										id='start'
-										name='start'
+										name='Year Graduated'
 										min='1900-01'
 										max='2100-01'
 										value={editYearGraduated}
@@ -89,7 +89,7 @@ const ModalEditUser = ({
 									<input
 										type='date'
 										id='start'
-										name='start'
+										name='Birthdate'
 										min='1900-01-01'
 										max='2100-01-01'
 										value={editBirthDate}
