@@ -52,7 +52,7 @@ const DashboardInfo = () => {
 						{/* Display filtered users */}
 						<div className='w-full flex items-center gap-5 container pt-2'>
 							<div className='w-1/2 justify-start'>
-								<h2>Master List</h2>
+								<h2>Employment Chart</h2>
 							</div>
 							<div className='w-1/2 flex items-center gap-2 justify-end'>
 								<button className='btn btn-add bg-accent text-primary flex items-center  gap-2 justify-center w-1/3'>

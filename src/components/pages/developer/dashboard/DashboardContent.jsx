@@ -2,14 +2,24 @@ import React from "react";
 import { Chart } from "react-google-charts";
 const DashboardContent = ({ users }) => {
 	const data = [
-		["Employment Status", "Emplyoyed/Unemployed/Student"],
-		["Employed", users[8] == "Employed" ? 10 : 0],
-		["Employed", users[8] == "Employed" ? 10 : 0],
-		["Employed", users[8] == "Employed" ? 10 : 0],
+		["Employment Status", "People"],
+		["Employed", 1],
+		["Non-working", 1],
+		["Self-Employed", 1],
 	];
 
 	const options = {
-		title: "Employment Status",
+   		is3D: true,
+		pieStartAngle: 90,
+    	legend: {
+    		position: "bottom",
+    		alignment: "center",
+    		textStyle: {
+    		color: "#233238",
+    		fontSize: 12,
+      		},
+		},
+		colors: ["#008000", "#FF5F1F", "#000080",],
 	};
 	return (
 		<Chart

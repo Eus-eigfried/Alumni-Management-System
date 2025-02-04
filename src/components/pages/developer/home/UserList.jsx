@@ -47,9 +47,10 @@ const UserList = ({
 						<thead className='border-b border-content'>
 							<tr className=' bg-content/10'>
 								<th className='w-[50px]'>Id</th>
-								<th className='w-[175px]'>Name</th>
-								<th className='w-[175px]'>Year Graduated</th>
-								<th className='w-[175px]'>Course</th>
+								<th className='w-[200px]'>Name</th>
+								<th className='w-[200px]'>Year Graduated</th>
+								<th className='w-[100px]'>Course</th>
+								<th className='w-[175px]'>Employement Status</th>
 								<th className='w-[125px]'>Is Archived?</th>
 								<th className='w-[100px]'>Actions</th>
 							</tr>
@@ -64,17 +65,18 @@ const UserList = ({
 										<td>{adminMessages[0]}</td>
 										<td>{adminMessages[0]}</td>
 										<td>{adminMessages[0]}</td>
+										<td>{adminMessages[0]}</td>
 									</tr>
 								</>
 							)}
 							{isLoading && (
 								<tr>
-									<td colSpan={6}>
+									<td colSpan={7}>
 										{isLoading && (
 											<TableLoader
 												onLoad={isLoaded()}
 												count='30'
-												cols='6'
+												cols='7'
 											/>
 										)}
 									</td>
@@ -93,6 +95,8 @@ const UserList = ({
 												<td>{user[2]}</td>
 												{/* course */}
 												<td>{user[3]}</td>
+												{/* status */}
+												<td>{user[8]}</td>
 
 												<td>
 													<p

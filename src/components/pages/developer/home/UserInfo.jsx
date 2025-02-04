@@ -32,25 +32,12 @@ const UserInfo = ({ users, isId, setIsId }) => {
 						{user ? (
 							<>
 								<div className='flex flex-row justify-evenly user info'>
-									<div className='flex flex-col gap-2 items-left '>
-										<div className='flex flex-row gap-2'>
+									<div className='flex flex-col gap-4 items-left '>
+										<div className='flex flex-row gap-4'>
 											<p>Id:</p>
 											<p>{user[0]}</p>
 										</div>
-										<div className='flex flex-row gap-2'>
-											<p>Name:</p>
-											<p>{user[1]}</p>
-										</div>
-										<div className='flex flex-row gap-2'>
-											<p>Graduation Year:</p>
-											<p>{user[2]}</p>
-										</div>
-										<div className='flex flex-row gap-2'>
-											<p>College Course:</p>
-											<p>{user[3]}</p>
-										</div>
-									</div>
-										<div className='flex flex-row items-center'>
+										<div className='flex flex-row'>
 											<p>Active Status:</p>
 											<p
 												className={` mx-auto ${
@@ -61,33 +48,47 @@ const UserInfo = ({ users, isId, setIsId }) => {
 												{user[9] ? "Active" : "Inactive"}
 											</p>
 										</div>
-									</div>
-									<div className='flex flex-col gap-2 items-right'>
-										<div className='flex flex-row gap-2'>
-											<p>BirthDate:</p>
-											<p>{user[4]}</p>
+										<div className='flex flex-row gap-4'>
+											<p>Time Created:</p>
+											<p>{user[10]}</p>
 										</div>
-										<div className='flex flex-row gap-2'>
-											<p>Address:</p>
-											<p>{user[5]}</p>
+										<div className='flex flex-row gap-4'>
+											<p>Graduation Year:</p>
+											<p>{user[2]}</p>
 										</div>
-										<div className='flex flex-row gap-2'>
-											<p>Contact No:</p>
-											<p>{user[6]}</p>
+										<div className='flex flex-row gap-4'>
+											<p>College Course:</p>
+											<p>{user[3]}</p>
 										</div>
-										<div className='flex flex-row gap-2'>
-											<p>Email:</p>
-											<p>{user[7]}</p>
-										</div>
-										<div className='flex flex-row gap-2'>
+										<div className='flex flex-row gap-4'>
 											<p>Employement Status:</p>
 											<p>{user[8]}</p>
 										</div>
 									</div>
-								<div className='justify-center flex flex-row gap-2'>
-									<p>Time Created:</p>
-									<p>{user[10]}</p>
+									<div className='flex flex-col gap-3 items-right'>
+										<div className='flex flex-row gap-3'>
+											<p>Name:</p>
+											<p>{user[1]}</p>
+										</div>
+										<div className='flex flex-row gap-3'>
+											<p>BirthDate:</p>
+											<p>{user[4]}</p>
+										</div>
+										<div className='flex flex-row gap-3'>
+											<p>Address:</p>
+											<p>{user[5]}</p>
+										</div>
+										<div className='flex flex-row gap-3'>
+											<p>Contact No:</p>
+											<p>{user[6]}</p>
+										</div>
+										<div className='flex flex-row gap-3'>
+											<p>Email:</p>
+											<p>{user[7]}</p>
+										</div>
+									</div>
 								</div>
+									
 							</>
 						) : (
 							<p>User not found</p>

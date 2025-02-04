@@ -126,8 +126,8 @@ const ModalEditUser = ({
 											value=''>
 											Occupational Status
 										</option>
-										<option value='Unemployed'>Unemployed</option>
 										<option value='Employed'>Employed</option>
+										<option value='Non-Working'>Non-Working</option>
 										<option value='Self-Employed'>Self-Employed</option>
 									</select>
 									{/* email */}

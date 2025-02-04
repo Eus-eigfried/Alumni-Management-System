@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AsideBar = ({ activeLink }) => {
-	const userAdmin = "Dean";
+	const userAdmin = "Dean of COE";
 	return (
 		<>
 			<div className='w-full h-screen bg-accent text-secondary py-5 pr-5'>
@@ -16,19 +16,24 @@ const AsideBar = ({ activeLink }) => {
 								className='object-cover rounded-full'
 							/>
 						</div>
-						<ul className='nav flex gap-2 flex-col justify-star w-full'>
+						<ul className='nav flex gap-3 flex-col justify-star w-full'>
 							<p>Hello, {userAdmin}</p>
 							<li
 								className={`nav-link navigator-${
 									activeLink === "home" ? "active" : ""
 								}`}>
-								<Link to='http://localhost:5173/'>Home</Link>
+								<Link to='http://localhost:5173/'>Master List</Link>
 							</li>
 							<li
 								className={`nav-link navigator-${
 									activeLink === "dashboard" ? "active" : ""
 								}`}>
-								<Link to='/graph'>Graph</Link>
+								<Link to='/graph'>Employment Chart</Link>
+							</li> 
+							<li className={`nav-link navigator-${
+									activeLink === "dashboard" ? "active" : ""
+								}`}>
+									<button>Logout</button>
 							</li>
 						</ul>
 					</div>
