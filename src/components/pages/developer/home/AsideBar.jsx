@@ -6,17 +6,17 @@ const AsideBar = ({ activeLink }) => {
 	const userAdmin = "Dean of COE";
 	return (
 		<>
-			<div className='w-full h-screen bg-accent text-secondary py-5 pr-5'>
+			<div className='w-full h-screen bg-accent text-secondary py-4 pr-4'>
 				<div className='container'>
-					<div className='flex flex-col gap-5'>
-						<div className='flex flex-row justify-start gap-2'>
+					<div className='flex flex-col'>
+						<div className='flex flex-row justify-start'>
 							<img
 								src='public/COE_logo.jpg'
 								alt='logo'
 								className='object-cover rounded-full'
 							/>
 						</div>
-						<ul className='nav flex gap-3 flex-col justify-star w-full'>
+						<ul className='nav flex flex-col justify-star w-full'>
 							<p>Hello, {userAdmin}</p>
 							<li
 								className={`nav-link navigator-${
@@ -31,9 +31,14 @@ const AsideBar = ({ activeLink }) => {
 								<Link to='/graph'>Employment Chart</Link>
 							</li> 
 							<li className={`nav-link navigator-${
-									activeLink === "dashboard" ? "active" : ""
+									activeLink === "FB COESC Page" ? "active" : ""
 								}`}>
-									<button>Logout</button>
+								<Link to='https://www.facebook.com/PLSPCOESC'>COESC Page</Link>
+							</li>
+							<li className={`nav-link navigator-${
+									activeLink === "PLSP Web" ? "active" : ""
+								}`}>
+								<Link to='https://plsp.edu.ph'>PLSP Web</Link>
 							</li>
 						</ul>
 					</div>

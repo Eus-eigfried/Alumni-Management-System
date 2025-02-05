@@ -87,7 +87,8 @@ const MainHome = () => {
 				(user) =>
 					user[1].toLowerCase().includes(lowercasedSearchTerm) || // search by name
 					user[2].toLowerCase().includes(lowercasedSearchTerm) || // search by year graduated
-					user[3].toLowerCase().includes(lowercasedSearchTerm) //search by course
+					user[3].toLowerCase().includes(lowercasedSearchTerm) || //search by course
+					user[8].toLowerCase().includes(lowercasedSearchTerm) // search by employment status
 			);
 			setFilteredUsers(filtered);
 		}
