@@ -3,9 +3,9 @@ import { Chart } from "react-google-charts";
 const DashboardContent = ({ users }) => {
 	const data = [
 		["Employment Status", "People"],
-		["Employed", 1],
-		["Non-working", 1],
-		["Self-Employed", 1],
+		["Employed", 0],
+		["Non-working", 0],
+		["Self-Employed", 0],
 	];
 
 	const options = {
